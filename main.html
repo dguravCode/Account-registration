@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./form-fav-Icon.png" type="image/x-icon">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <h1>Registration Form</h1>
+        <form class="form">
+            <!-- First Name Field -->
+            <div class="fn-container gutter-small">
+                <label class="d-flex direction-column gap">
+                        First Name <br>
+                    <input data-key="firstName" class="input" placeholder="First Name"/>
+                    </label>
+                <p data-error="fn-error" class="error-message">
+                    Name must only contain alphabets.
+                </p>
+                <p class="empty-field">
+                    *Please fill this field.
+                </p>
+            </div>
+    
+            <!-- Last Name Field -->
+            <div class="ln-container gutter-small">
+                <label class="d-flex direction-column gap">
+                        Last Name <br>
+                    <input data-key="lastName" class="input" placeholder="Last Name"/>
+                </label>
+                <p data-error="ln-error" class="error-message">
+                    Name must only contain alphabets.
+                </p>
+                <p class="empty-field">
+                    *Please fill this field.
+                </p>
+            </div>
+    
+            <!-- Email Id Field -->
+            <div class="email-container gutter-small">
+                <label class="d-flex direction-column gap">
+                        Email Id <br>
+                    <input 
+                    data-key="email"
+                    type="email"
+                    class="input"
+                    placeholder="name@example.com"/>
+                </label>
+                <p data-error="email-error" class="error-message">
+                    Invalid Email.
+                </p>
+                <p class="empty-field">
+                    *Please fill this field.
+                </p>
+            </div>
+    
+            <!-- Password Field -->
+            <div class="pwd-container gutter-small">
+                <label class="d-flex direction-column gap">
+                        Password <br>
+                    <div class="input-wrap">
+                        <input 
+                        data-key="password"
+                        type="password" 
+                        class="input"
+                        placeholder="Password"/>
+                        <button type="button" class="btn absolute right-0">
+                            <span class="material-icons-outlined"></span>
+                        </button>
+                    </div>
+                </label>
+                <ul data-error="pwd-error" class="error-message">
+                    <li class="list">
+                        Password must contain atleast 8 characters.
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one lower case letter.
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one upper case letter.
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one digit.
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one special character (!@#$%^&*).
+                    </li>
+                </ul>
+                <p class="empty-field">
+                    *Please fill this field.
+                </p>
+            </div>
+            <button class="button btn-primary cursor">
+                Create Account
+            </button>
+        </form>
+
+    </main>
+
+    <script src="./FormValidation.js"></script>
+</body>
+
+</html>
