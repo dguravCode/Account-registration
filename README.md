@@ -1,2 +1,2 @@
-# Registere-Account-Html-Css-javaScript-
+#Account registration-Html-Css-javaScript-
 This project is a simple account registration form built with HTML, CSS, and JavaScript. It checks and validates the user’s name, email address, and password before allowing registration. The JavaScript handles the validation logic, ensuring that the name contains valid characters, the email follows the correct format, and the password meets security requirements. CSS is used to style the form for a clean and user-friendly interface.
