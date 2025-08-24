@@ -25,7 +25,7 @@ This project is a account registration form built with HTML, CSS, and JavaScript
 3. Fill out the registration form.
 4. Submit to see validation in action.
 
-## Live Demo
+## Live Link
 
 [https://account-registration.vercel.app/](https://account-registration.vercel.app/)
 
